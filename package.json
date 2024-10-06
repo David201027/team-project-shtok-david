@@ -1,11 +1,11 @@
 {
-  "name": "project-name",
+  "name": "team-project-shtok-david",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/project-name/",
+    "build": "vite build --base=/team-project-shtok-david/",
     "preview": "vite preview"
   },
   "devDependencies": {
