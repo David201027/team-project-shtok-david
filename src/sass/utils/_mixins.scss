@@ -1,0 +1,29 @@
+@mixin flex-align {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-just {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flex-max {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-change($property, $align, $justify) {
+    display: $property;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: column;
+}
+@mixin backgraund($color) {
+    background-color: $color;
+}
+@mixin just($key){
+    display: flex;
+    justify-content: $key;
+}

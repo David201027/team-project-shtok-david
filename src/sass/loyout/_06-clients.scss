@@ -1,0 +1,96 @@
+.section-clients {
+    padding: 60px 0;
+
+    .clients-div{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title-clients {
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: getColor('dark');
+      margin-bottom: 50px;
+    }
+
+    .list-clients {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      max-width: 450px;
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .list-clients__item:hover .link-clients {
+        border-color: #2196F3;
+        fill: #2196F3;
+      }
+    }
+    .list-clients__item{
+
+      .link-clients {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #AFB1B8;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        width: 44vw; 
+        max-width: 210px;
+        height: 92px;
+        transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms, fill 500ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+      }
+    }
+}
+@media screen and (min-width: getBreakPoint('tablet')){
+    .section-clients {
+
+        .list-clients {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+        }
+        .list-clients__item{
+          
+          .link-clients {
+            width: 210px;
+            height: 92px;
+          }
+        }
+    }
+}
+@media screen and (min-width: getBreakPoint('desktop')){
+    .section-clients {
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+
+        .title-clients {
+            font-weight: 700;
+            font-size: 36px;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: getColor('dark');
+            margin-bottom: 50px;
+        }
+
+        .list-clients {
+          display: flex;
+          align-items: center;
+        }
+        .list-clients__item{
+
+          .link-clients {
+            width: 170px;
+            height: 92px;
+          }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+%flex-align {
+    display: flex;
+    align-items: center;
+}
+%flex-just {
+    display: flex;
+    justify-content: space-between;
+}
+%flex-max {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex {
+    display: flex;
+}
+%flex-row {
+    display: flex;
+    flex-direction: column;
+}
